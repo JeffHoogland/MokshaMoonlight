@@ -1,0 +1,16 @@
+# ==============================================================================
+# LIBREOFFICE SPECIFIC SETTINGS
+# ==============================================================================
+style "toolbar" = "dark" {
+bg[NORMAL] = shade (1.23, @bg_color_dark)
+
+	engine "murrine" {
+		textstyle = 1
+		text_shade = 1.32
+		lightborder_shade = 1.0
+                glowstyle = 5
+		glow_shade = 1.1
+		border_shades = {0.95, 0.85}
+		gradient_shades = {1.1, 1.0, 1.0, 0.88}
+	}
+}
