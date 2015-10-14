@@ -18,27 +18,27 @@
 }
 
 .check {
-    background-image: url("assets/check-unselected.png");
+    background-image: url("assets/checkbox-unchecked.svg");
 }
 
 .check:hover {
-    background-image: url("assets/check-unselected-hover.png");
+    background-image: url("assets/checkbox-unchecked-prelight.svg");
 }
 
 .check row,
 .check row:selected,
 .check row:selected:focus {
-    background-image: url("assets/check-unselected-alt.png");
+    background-image: url("assets/checkbox-unchecked.svg");
 }
 
 .check row:hover,
 .check row:selected:hover,
 .check row:selected:focus:hover {
-    background-image: url("assets/check-unselected-hover-alt.png");
+    background-image: url("assets/checkbox-unchecked.svg");
 }
 
 .check:insensitive {
-    background-image: url("assets/check-unselected-disabled.png");
+    background-image: url("assets/checkbox-unchecked-insensitive.svg");
 }
 
 .check row:insensitive {
@@ -49,169 +49,94 @@
 .check row:selected:insensitive,
 .check row:selected:focus:insensitive {
     background-color: transparent;
-    background-image: url("assets/check-unselected-disabled-alt.png");
+    background-image: url("assets/checkbox-unchecked-insensitive.svg");
 }
 
-.check:backdrop {
-    background-image: url("assets/backdrop-check-unselected.png");
-}
 
-.check:hover:backdrop {
-    background-image: url("assets/backdrop-check-unselected-hover.png");
-}
-
-.check row:backdrop,
-.check row:selected:backdrop {
-    background-image: url("assets/backdrop-check-unselected-alt.png");
-}
-
-.check row:hover:backdrop,
-.check row:selected:hover:backdrop {
-    background-image: url("assets/backdrop-check-unselected-hover-alt.png");
-}
-
-.check:insensitive:backdrop {
-    background-image: url("assets/backdrop-check-unselected-disabled.png");
-}
-
-.check row:selected:insensitive:backdrop {
-    background-image: url("assets/backdrop-check-unselected-disabled-alt.png");
-}
 
 .check:active {
-    background-image: url("assets/check-selected.png");
+    background-image: url("assets/checkbox-checked.svg");
 }
 
 .check:active:hover {
-    background-image: url("assets/check-selected-hover.png");
+    background-image: url("assets/checkbox-checked-prelight.svg");
 }
 
 .check row:active,
 .check row:selected:active,
 .check row:selected:focus:active {
-    background-image: url("assets/check-selected-alt.png");
+    background-image: url("assets/checkbox-checked.svg");
 }
 
 .check row:active:hover,
 .check row:selected:active:hover,
 .check row:selected:active:focus:hover {
-    background-image: url("assets/check-selected-hover-alt.png");
+    background-image: url("assets/checkbox-checked-prelight.svg");
 }
 
 .check:active:insensitive {
-    background-image: url("assets/check-selected-disabled.png");
+    background-image: url("assets/checkbox-checked-insensitive.svg");
 }
 
 .check row:active:insensitive,
 .check row:selected:active:insensitive,
 .check row:selected:focus:active:insensitive {
-    background-image: url("assets/check-selected-disabled-alt.png");
+    background-image: url("assets/checkbox-checked-insensitive.svg");
 }
 
-.check:active:backdrop {
-    background-image: url("assets/backdrop-check-selected.png");
-}
-
-.check:active:backdrop {
-    background-image: url("assets/backdrop-check-selected-hover.png");
-}
-
-.check row:active:backdrop,
-.check row:selected:active:backdrop {
-    background-image: url("assets/backdrop-check-selected-alt.png");
-}
-
-.check row:active:hover:backdrop,
-.check row:selected:active:hover:backdrop {
-    background-image: url("assets/backdrop-check-selected-hover-alt.png");
-}
-
-.check:active:insensitive:backdrop {
-    background-image: url("assets/backdrop-check-selected-disabled.png");
-}
-
-.check row:selected:active:insensitive:backdrop {
-    background-image: url("assets/backdrop-check-selected-disabled-alt.png");
-}
 
 .check:inconsistent {
-    background-image: url("assets/check-mixed.png");
+    background-image: url("assets/checkbox-mixed.svg");
 }
 
 .check:inconsistent:hover {
-    background-image: url("assets/check-mixed-hover.png");
+    background-image: url("assets/checkbox-mixed-prelight.svg");
 }
 
 .check row:inconsistent,
 .check row:selected:inconsistent,
 .check row:selected:focus:inconsistent {
-    background-image: url("assets/check-mixed-alt.png");
+    background-image: url("assets/checkbox-mixed.svg");
 }
 
 .check row:inconsistent:hover,
 .check row:selected:inconsistent:hover,
 .check row:selected:focus:inconsistent:hover {
-    background-image: url("assets/check-mixed-hover-alt.png");
+    background-image: url("assets/checkbox-mixed-prelight.svg");
 }
 
 .check:inconsistent:insensitive {
-    background-image: url("assets/check-mixed-disabled.png");
+    background-image: url("assets/checkbox-mixed-insensitive.svg");
 }
 
 .check row:inconsistent:insensitive,
 .check row:selected:inconsistent:insensitive,
 .check row:selected:focus:inconsistent:insensitive {
-    background-image: url("assets/check-mixed-disabled-alt.png");
-}
-
-.check:inconsistent:backdrop {
-    background-image: url("assets/backdrop-check-mixed.png");
-}
-
-.check:inconsistent:hover:backdrop {
-    background-image: url("assets/backdrop-check-mixed-hover.png");
-}
-
-.check row:inconsistent:backdrop,
-.check row:selected:inconsistent:backdrop {
-    background-image: url("assets/backdrop-check-mixed-alt.png");
-}
-
-.check row:inconsistent:hover:backdrop,
-.check row:selected:inconsistent:hover:backdrop {
-    background-image: url("assets/backdrop-check-mixed-hover-alt.png");
-}
-
-.check:inconsistent:insensitive:backdrop {
-    background-image: url("assets/backdrop-check-mixed-disabled.png");
-}
-
-.check row:selected:inconsistent:insensitive:backdrop {
-    background-image: url("assets/backdrop-check-mixed-disabled-alt.png");
+    background-image: url("assets/checkbox-mixed-insensitive.svg");
 }
 
 .radio {
-    background-image: url("assets/radio-unselected.png");
+    background-image: url("assets/radio-unselected.svg");
 }
 
 .radio:hover {
-    background-image: url("assets/radio-unselected-hover.png");
+    background-image: url("assets/radio-unselected-prelight.svg");
 }
 
 .radio row,
 .radio row:selected,
 .radio row:selected:focus {
-    background-image: url("assets/radio-unselected-alt.png");
+    background-image: url("assets/radio-unselected.svg");
 }
 
 .radio row:hover,
 .radio row:selected:hover,
 .radio row:selected:focus:hover {
-    background-image: url("assets/radio-unselected-hover-alt.png");
+    background-image: url("assets/radio-unselected-prelight.svg");
 }
 
 .radio:insensitive {
-    background-image: url("assets/radio-unselected-disabled.png");
+    background-image: url("assets/radio-unselected-insensitive.svg");
 }
 
 .radio row:insensitive {
@@ -224,87 +149,38 @@
     background-image: url("assets/radio-unselected-disabled-alt.png");
 }
 
-.radio:backdrop {
-    background-image: url("assets/backdrop-radio-unselected.png");
-}
 
-.radio:hover:backdrop {
-    background-image: url("assets/backdrop-radio-unselected-hover.png");
-}
-
-.radio row:backdrop,
-.radio row:selected:backdrop {
-    background-image: url("assets/backdrop-radio-unselected-alt.png");
-}
-
-.radio row:hover:backdrop,
-.radio row:selected:hover:backdrop {
-    background-image: url("assets/backdrop-radio-unselected-hover-alt.png");
-}
-
-.radio:insensitive:backdrop {
-    background-image: url("assets/backdrop-radio-unselected-disabled.png");
-}
-
-.radio row:selected:insensitive:backdrop {
-    background-image: url("assets/backdrop-radio-unselected-disabled-alt.png");
-}
 
 .radio:active {
-    background-image: url("assets/radio-selected.png");
+    background-image: url("assets/radio-selected.svg");
 }
 
 .radio:active:hover {
-    background-image: url("assets/radio-selected-hover.png");
+    background-image: url("assets/radio-selected-prelight.svg");
 }
 
 .radio row:active,
 .radio row:selected:active,
 .radio row:selected:focus:active {
-    background-image: url("assets/radio-selected-alt.png");
+    background-image: url("assets/radio-selected.svg");
 }
 
 .radio row:active:hover,
 .radio row:selected:active:hover,
 .radio row:selected:focus:active:hover {
-    background-image: url("assets/radio-selected-hover-alt.png");
+    background-image: url("assets/radio-selected-prelight.svg");
 }
 
 .radio:active:insensitive {
-    background-image: url("assets/radio-selected-disabled.png");
+    background-image: url("assets/radio-selected-insensitive.svg");
 }
 
 .radio row:insensitive,
 .radio row:selected:active:insensitive,
 .radio row:selected:focus:active:insensitive {
-    background-image: url("assets/radio-selected-disabled-alt.png");
+    background-image: url("assets/radio-selected-insensitive.svg");
 }
 
-.radio:active:backdrop {
-    background-image: url("assets/backdrop-radio-selected.png");
-}
-
-.radio:active:hover:backdrop {
-    background-image: url("assets/backdrop-radio-selected-hover.png");
-}
-
-.radio row:active:backdrop,
-.radio row:selected:active:backdrop {
-    background-image: url("assets/backdrop-radio-selected-alt.png");
-}
-
-.radio row:active:hover:backdrop,
-.radio row:selected:active:hover:backdrop {
-    background-image: url("assets/backdrop-radio-selected-hover-alt.png");
-}
-
-.radio:active:insensitive:backdrop {
-    background-image: url("assets/backdrop-radio-selected-disabled.png");
-}
-
-.radio row:selected:active:insensitive:backdrop {
-    background-image: url("assets/backdrop-radio-selected-disabled-alt.png");
-}
 
 .radio:inconsistent {
     background-image: url("assets/radio-mixed.png");
@@ -336,31 +212,7 @@
     background-image: url("assets/radio-mixed-disabled-alt.png");
 }
 
-.radio:inconsistent:backdrop {
-    background-image: url("assets/backdrop-radio-mixed.png");
-}
 
-.radio:inconsistent:hover:backdrop {
-    background-image: url("assets/backdrop-radio-mixed-hover.png");
-}
-
-.radio row:inconsistent:backdrop,
-.radio row:selected:inconsistent:backdrop {
-    background-image: url("assets/backdrop-radio-mixed-alt.png");
-}
-
-.radio row:inconsistent:hover:backdrop,
-.radio row:selected:inconsistent:hover:backdrop {
-    background-image: url("assets/backdrop-radio-mixed-hover-alt.png");
-}
-
-.radio:inconsistent:insensitive:backdrop {
-    background-image: url("assets/backdrop-radio-mixed-disabled.png");
-}
-
-.radio row:selected:inconsistent:insensitive:backdrop {
-    background-image: url("assets/backdrop-radio-mixed-disabled-alt.png");
-}
 
 /*.sidebar .radio:active,
 .sidebar .radio:active:focus,
@@ -464,10 +316,7 @@
     background-image: url("assets/slider-horizontal.png");
 }
 
-.scale.slider:backdrop,
-.scale.slider.horizontal:backdrop {
-    /*background-image: url("assets/slider-horizontal-disabled.png");*/
-}
+
 
 .scale.slider:hover,
 .scale.slider.horizontal:hover {
@@ -489,18 +338,12 @@
     background-image: url("assets/slider-horizontal-disabled.png");
 }
 
-.scale.slider:insensitive:backdrop,
-.scale.slider.horizontal:insensitive:backdrop {
-    /*background-image: url("assets/slider-horizontal-backdrop-disabled.png");*/
-}
 
 .scale.slider.vertical {
     background-image: url("assets/slider-vertical.png");
 }
 
-.scale.slider.vertical:backdrop {
-    /*background-image: url("assets/slider-vertical-backdrop.png");*/
-}
+
 
 .scale.slider.vertical:hover {
     background-image: url("assets/slider-vertical-hover.png");

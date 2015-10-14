@@ -29,9 +29,7 @@ GtkSwitch.trough:active {
     border-image: url("assets/button.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.button:backdrop {
-    border-image: url("assets/backdrop-button.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
-}
+
 
 .button:focus {
     border-image: url("assets/button-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
@@ -41,9 +39,7 @@ GtkSwitch.trough:active {
     border-image: url("assets/button-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.button:hover:backdrop {
-    border-image: url("assets/backdrop-button-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
-}
+
 
 .button:hover:focus {
     border-image: url("assets/button-focused-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
@@ -61,17 +57,12 @@ GtkSwitch.trough:active {
     border-image: url("assets/button-active.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.button:active:backdrop {
-    border-image: url("assets/backdrop-button-active.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
-}
 
 .button:active:hover {
     border-image: url("assets/button-active-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.button:active:hover:backdrop {
-    border-image: url("assets/backdrop-button-active-hover.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
-}
+
 
 .button:active:focus {
     border-image: url("assets/button-active-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
@@ -85,9 +76,7 @@ GtkSwitch.trough:active {
     border-image: url("assets/button-active-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.button:active:insensitive:backdrop {
-    border-image: url("assets/backdrop-button-active-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
-}
+
 
 /* focused button borders */
 
@@ -109,8 +98,14 @@ GtkSwitch.trough:active {
 
 .primary-toolbar .button,
 .menubar.toolbar .button,
-.header-bar .button {
+.header-bar .button:active:insensitive,
+.header-bar .button:insensitive {
     border-image: url("assets/button-toolbar.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.header-bar .button,
+.header-bar .button:active {
+border-image: url("assets/transparent.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 .primary-toolbar .button:focused,
@@ -121,7 +116,9 @@ GtkSwitch.trough:active {
 
 .primary-toolbar .button:active,
 .menubar.toolbar .button:active,
-.header-bar .button:active {
+.header-bar .button:hover,
+.header-bar .raised .button,
+.header-bar .raised.button {
     border-image: url("assets/button-toolbar-active.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
@@ -131,23 +128,11 @@ GtkSwitch.trough:active {
     border-image: url("assets/button-toolbar-active-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar .button:backdrop,
-.menubar.toolbar .button:backdrop,
-.header-bar .button:backdrop {
-    border-image: url("assets/backdrop-button-toolbar.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
-}
 
-.primary-toolbar .button:active:backdrop,
-.menubar.toolbar .button:active:backdrop,
-.header-bar .button:active:backdrop {
-    border-image: url("assets/backdrop-button-toolbar-active.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
-}
 
 .menubar.menuitem:hover,
 .menubar .menuitem:hover {
-    border: 1px solid #2e2e2c;
-    border-bottom-width: 0px;
-    border-radius: 4px 4px 0 0;
+    border-image: url("assets/menubaritem.png") 8 10 1 10 / 8px 10px 1px 10px stretch;
 }
 
 /*********
@@ -170,6 +155,13 @@ GtkSwitch.trough:active {
 
 .entry:focus {
     border-image: url("assets/entry-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.entry:selected,
+.entry:selected:focus {
+}
+
+.entry:focus {
 }
 
 .entry:insensitive {
@@ -224,9 +216,7 @@ GtkComboBox.combobox-entry .button {
     border-image: url("assets/combobox-button.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-GtkComboBox.combobox-entry .button:backdrop {
-    border-image: url("assets/backdrop-combobox-button.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
-}
+
 
 GtkComboBox.combobox-entry .button:focus {
     border-image: url("assets/combobox-button-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
@@ -236,9 +226,7 @@ GtkComboBox.combobox-entry .button:insensitive {
     border-image: url("assets/combobox-button-disabled.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-GtkComboBox.combobox-entry .button:insensitive:backdrop {
-    border-image: url("assets/backdrop-combobox-button-disabled.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
-}
+
 
 GtkComboBox.combobox-entry .button:active:focus {
     border-image: url("assets/combobox-button-pressed-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
@@ -282,7 +270,7 @@ GtkComboBox.combobox-entry .button:active:focus {
 .menubar.toolbar GtkComboBox.combobox-entry .button:last-child,
 .header-bar GtkComboBox.combobox-entry .entry:last-child,
 .header-bar GtkComboBox.combobox-entry .button:last-child {
-    border-image-width: 10px 12px 10px 1px;
+    border-image-width: 10px 12px 10px 0px;
     border-radius: 0 8px 8px 0;
     border-left-width: 0;
 }
@@ -305,7 +293,7 @@ GtkComboBox.combobox-entry .button:active:focus {
 
 .trough,
 .trough.highlight {
-    border-radius: 4px;
+    border-radius: 0px;
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
@@ -313,11 +301,22 @@ GtkComboBox.combobox-entry .button:active:focus {
 
 .trough {
     border-image: url("assets/progressbar-horizontal-trough.png") 6 7 6 7 / 6px 7px 6px 7px stretch;
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#ced2dc, 1.05)),
+                                     to (shade (#e0e4ed, 1.05))); 
+   border-radius: 0px;
 }
 
 .trough.vertical {
     border-image: url("assets/progressbar-vertical-trough.png") 7 6 7 6 / 7px 6px 7px 6px stretch;
+    background-image: -gtk-gradient (linear,
+                                     left top, right top,
+                                     from (shade (#ced2dc, 1.05)),
+                                     to (shade (#e0e4ed, 1.05))); 
 }
+
+
 
 .trough.vertical {
     border-image: url("assets/progressbar-vertical-trough.png") 7 6 7 6 / 7px 6px 7px 6px stretch;
@@ -377,10 +376,22 @@ GtkSwitch.slider:active:insensitive {
 .progressbar row:selected,
 .progressbar row:selected:focused {
     border-image: url("assets/progressbar-horizontal-fill.png") 5 6 5 6 / 5px 6px 5px 6px stretch;
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#ddf0c2, 1.05)),
+                                     color-stop (0.50, shade (#96d243, 1.00)),
+                                     color-stop (0.51, shade (#74b21e, 1.00)),
+                                     to (shade (#77b81c, 1.05))); 
 }
 
 .progressbar.vertical {
     border-image: url("assets/progressbar-vertical-fill.png") 6 5 6 5 / 6px 5px 6px 5px stretch;
+    background-image: -gtk-gradient (linear,
+                                     right top, left top,
+                                     from (shade (#ddf0c2, 1.05)),
+                                     color-stop (0.50, shade (#96d243, 1.00)),
+                                     color-stop (0.51, shade (#74b21e, 1.00)),
+                                     to (shade (#77b81c, 1.05))); 
 }
 
 .progressbar:backdrop,
@@ -396,32 +407,48 @@ GtkSwitch.slider:active:insensitive {
 }
 
 .scale.trough {
-    border-image: url("assets/scale-horizontal-trough.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#84c5ff, 1.05)),
+                                     to (shade (#6e96ff, 1.05))); 
+
+     border-image: url("assets/h1.png") 5 3 3 5 / 5px 3px 3px 5px stretch;
 }
 
 .scale.trough:insensitive {
-    border-image: url("assets/scale-horizontal-trough-disabled.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#84c5ff, 1.05)),
+                                     to (shade (#6e96ff, 1.05))); 
+     border-image: url("assets/h1inactive.png") 5 3 3 5 / 5px 3px 3px 5px stretch;
 }
 
-.scale.trough:backdrop {
-    border-image: url("assets/scale-horizontal-trough-backdrop.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
-}
 
 .scale.trough.vertical {
-    border-image: url("assets/scale-vertical-trough.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+   background-image: -gtk-gradient (linear,
+                                     left top, right top,
+                                     from (shade (#84c5ff, 1.05)),
+                                     to (shade (#6e96ff, 1.05))); 
+     border-image: url("assets/v1.png")   5 3 3 5 / 5px 3px 3px 5px stretch;
 }
 
 .scale.trough.vertical:insensitive {
-    border-image: url("assets/scale-vertical-trough-disabled.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+    background-image: -gtk-gradient (linear,
+                                     left top, right top,
+                                     from (shade (#84c5ff, 1.05)),
+                                     to (shade (#6e96ff, 1.05))); 
+     border-image: url("assets/v1inactive.png")   5 3 3 5 / 5px 3px 3px 5px stretch;
 }
 
-.scale.trough.highlight.left {
-    border-image: url("assets/scale-horizontal-fill.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+.scale.trough.highlight.left,
+.scale.trough.highlight {
+    background-color: #df784e;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (@transparent),
+                                     to (@transparent));  
+    background-clip: content-box;
 }
 
-.scale.trough.vertical:backdrop {
-    border-image: url("assets/scale-vertical-trough-backdrop.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
-}
 
 .scale.trough.highlight.left:insensitive {
     border-image: url("assets/scale-horizontal-fill-disabled.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
@@ -442,4 +469,19 @@ GtkSwitch.slider:active:insensitive {
 .scale.trough.highlight.bottom.vertical:backdrop {
     border-image: url("assets/scale-vertical-fill-backdrop.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
+
+.selection-mode.header-bar .button,
+.selection-mode.toolbar .button,
+.selection-mode.toolbar GtkToolButton .button {
+
+    border-image: none;
+    border-color: @selection_toolbar_button_border;
+    border-width: 1px;
+
+    box-shadow: inset 0 1px alpha(white, 0.1);
+
+    color: @selection_toolbar_button_fg;
+}
+
+
 

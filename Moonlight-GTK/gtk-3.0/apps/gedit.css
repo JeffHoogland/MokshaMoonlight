@@ -19,6 +19,7 @@ GeditWindow .notebook {
 }
 
 GeditPanel .notebook {
+    padding: 3px;
     border-radius: 1px;
 }
 

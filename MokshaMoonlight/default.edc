@@ -15,8 +15,7 @@ data {
 	item: "theme/name"		"Midnight Moonlight";
 	item: "theme/version"	"beta";
 	item: "theme/author"	"Alberto 'Duma' Verdoja";
-	// theme api version. from 1.10 on we will check version to avoid
-	// compat issues
+	item: "gtk-theme"       "Moonlight-GTK";
 	item: "version"			"110";
 	
 }

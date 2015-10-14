@@ -47,7 +47,7 @@ TerminalWindow GtkNotebook.notebook {
 
 /* nautilus */
 .nautilus-canvas-item {
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .nautilus-inactive-pane .nautilus-canvas-item:selected {
@@ -665,3 +665,12 @@ GucharmapChartable:selected {
  background-color: @theme_selected_bg_color;
  color: @theme_selected_fg_color;
 }
+
+/* gnome-weather */
+weather-page {    color:white;
+    text-shadow: inset 1px 1px 3px black;
+    icon-shadow: inset 1px 1px 3px black;
+}
+
+
+
