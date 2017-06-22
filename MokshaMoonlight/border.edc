@@ -95,7 +95,7 @@ part { 									\
 									\
 		image { 						\
 			normal: IMG1; 					\
-			border: 72 0 0 0;				\
+			border: 72 72 0 0;				\
 		}							\
 	} 								\
 	description {							\
@@ -328,8 +328,8 @@ part { 							\
 							\
 		rel1 { 					\
 			to: TO1; 			\
-			offset: 5 3;			\
-			relative: 1 0;			\
+			offset: 2 0;			\
+			relative: 0 0;			\
 		} 					\
 							\
 		rel2 { 					\
@@ -466,8 +466,9 @@ program { \
 	target: "button-min"; \
 	target: "button-max"; \
 	target: "text_alt"; \
+	target: "top-left-over"; \
 	target: "top-center-over"; \
-	target: "top-right-over"; \
+	/*target: "top-right-over";*/ \
 } \
 program { \
 	name: "inactive"; \
@@ -480,8 +481,9 @@ program { \
 	target: "button-min"; \
 	target: "button-max"; \
 	target: "text_alt"; \
+	target: "top-left-over"; \
 	target: "top-center-over"; \
-	target: "top-right-over"; \
+	/*target: "top-right-over";*/ \
 } \
 program { \
 	name: "close_click"; \
@@ -599,8 +601,9 @@ program { \
 	target: "e.text.title"; \
 	target: "button-close"; \
 	target: "text_alt"; \
+	target: "top-left-over"; \
 	target: "top-center-over"; \
-	target: "top-right-over"; \
+	/*target: "top-right-over";*/ \
 } \
 program { \
 	name: "inactive"; \
@@ -612,7 +615,8 @@ program { \
 	target: "button-close"; \
 	target: "text_alt"; \
 	target: "top-center-over"; \
-	target: "top-right-over"; \
+	target: "top-left-over"; \
+	/*target: "top-right-over";*/ \
 } \
 program { \
 	name: "close_click"; \
@@ -711,7 +715,7 @@ group {
 		BORDER3("top-center", 5 23, 9999 23, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "bd_top.png", 1.0 0.5, 0.0 0.5, 0 0)
 		BORDER3("bottom-center", 5 5, 9999 5, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bd_bottom.png", 1.0 1.0, 0.0 1.0, 0 -6)
 		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 1.0 1.0, -2 -6)
-		TITLE_CLIP("title.area.clip", 1 20, "min-clip", 1.0 0.5, 10 0, "top-right", 1.0 0.5, -30 0, 255 255 255 255)
+		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "top-right", 1.0 0.5, -30 0, 255 255 255 255)
 		part { 	name: "e.text.title";
 			type: TEXT;
 			effect: SOFT_SHADOW BOTTOM;
@@ -753,8 +757,9 @@ group {
 				visible: 1;
 			}
 		}
-		BORDER("top-right-over", 6 23, 6 23, 1.0 0.0, 0 22, 1.0 0.0, -6 0, "bd_top_right_over.png", 1.0 1.0, 1.0 0.0, -5 23)
-		BORDER3("top-center-over", 5 23, 9999 23, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "bd_top_over.png", 1.0 1.0, 0.0 1.0, -1 -2)
+		BORDER("top-left-over", 6 23, 6 23, 0.0 0.0, 3 22, 0.0 0.0, 3 0, "bd_top_left_over.png", 0.0 0.0, 0.0 0.0, 3 22)
+		BORDER("top-right-over", 6 23, 6 23, 1.0 0.0, 0 22, 1.0 0.0, -6 0, "bd_top_right.png", 1.0 0.0, 1.0 0.0, 20 22)
+		BORDER3("top-center-over", 5 23, 9999 23, "top-left", 0.0 0.5,  3 0, "top-right", 1.0 0.5, -15 0, "bd_top_over.png", 1.0 1.0, 0.0 1.0, -1 -2)
 
 		MOVE_WINDOW("move-window", 1 22, 9999 22, "top-left", 0.0 0.0, 5 2, "top-right", 1.0 1.0, -7 -1, 255 0 0 0)
 		PART_EVENT_MAP("e.event.resize.t", 0, "resize_t")
@@ -766,9 +771,9 @@ group {
 		PART_EVENT_MAP("e.event.resize.b", 0, "bottom-center")
 		PART_EVENT_MAP("e.event.resize.tr", 0, "top-right")
 		PART_EVENT_MAP("e.event.resize.tl", 0, "top-left")		
-		CLIPS("close-clip", 20 18, 20 18, "top-left", 0.0 0.0, 0 0, 0.0 1.0, 30 -8)
-		CLIPS("max-clip", 20 18, 20 18, "close-clip", 1.0 0.0, 0 0, 0.0 1.0, 30 -1)
-		CLIPS("min-clip", 20 18, 20 18, "max-clip", 1.0 0.0, 0 0, 0.0 1.0, 30 -1)
+		CLIPS("close-clip", 20 18, 20 18, "top-right", 1.0 0.0, 0 0, 0.0 1.0, -15 -8)
+		CLIPS("max-clip", 20 18, 20 18, "close-clip", 1.0 0.0, 0 0, 0.0 1.0, -45 -1)
+		CLIPS("min-clip", 20 18, 20 18, "max-clip", 1.0 0.0, 0 0, 0.0 1.0, -45 -1)
 		BUTTONS("button-close", "close-clip", 15 15, "close-clip", "bd_button_close_unfocused.png")
 		BUTTONS("button-max", "max-clip", 15 15, "max-clip", "bd_button_max_unfocused.png")
 		BUTTONS("button-min", "min-clip", 15 15, "min-clip", "bd_button_min_unfocused.png")
@@ -848,7 +853,8 @@ group {
 		BORDER3("top-center", 5 23, 9999 23, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "bd_top.png", 1.0 0.5, 0.0 0.5, 0 0)
 		BORDER3("bottom-center", 5 5, 9999 5, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bd_bottom.png", 1.0 1.0, 0.0 1.0, 0 -6)
 		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 1.0 1.0, -2 -6)
-		TITLE_CLIP("title.area.clip", 1 20, "min-clip", 1.0 0.5, 10 0, "top-right", 1.0 0.5, -30 0, 255 255 255 255)
+		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "top-right", 1.0 0.5, -30 0, 255 255 255 255)
+		//TITLE_CLIP("title.area.clip", 1 20, "min-clip", 1.0 0.5, 10 0, "top-right", 1.0 0.5, -30 0, 255 255 255 255)
 		part { 	name: "e.text.title";
 			type: TEXT;
 			effect: SOFT_SHADOW BOTTOM;
@@ -890,7 +896,8 @@ group {
 				visible: 1;
 			}
 		}
-		BORDER("top-right-over", 6 23, 6 23, 1.0 0.0, 0 22, 1.0 0.0, -6 0, "bd_top_right_overs.png", 1.0 1.0, 1.0 0.0, -5 23)
+		BORDER("top-left-over", 6 23, 6 23, 0.0 0.0, 3 22, 0.0 0.0, 3 0, "bd_top_left_over.png", 0.0 0.0, 0.0 0.0, 3 22)
+		BORDER("top-right-over", 6 23, 6 23, 1.0 0.0, 0 22, 1.0 0.0, -6 0, "bd_top_right.png", 1.0 1.0, 1.0 0.0, -5 23)
 		BORDER3("top-center-over", 5 23, 9999 23, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "bd_top_over.png", 1.0 1.0, 0.0 1.0, -1 -2)
 
 		MOVE_WINDOW("move-window", 1 22, 9999 22, "top-left", 0.0 0.0, 5 2, "top-right", 1.0 1.0, -7 -1, 255 0 0 0)
@@ -903,9 +910,9 @@ group {
 		PART_EVENT_MAP("e.event.resize.b", 0, "bottom-center")
 		PART_EVENT_MAP("e.event.resize.tr", 0, "top-right")
 		PART_EVENT_MAP("e.event.resize.tl", 0, "top-left")		
-		CLIPS("close-clip", 20 18, 20 18, "top-left", 0.0 0.0, 0 0, 0.0 1.0, 30 -8)
-		CLIPS("max-clip", 20 18, 20 18, "close-clip", 1.0 0.0, 0 0, 0.0 1.0, 30 -1)
-		CLIPS("min-clip", 20 18, 20 18, "max-clip", 1.0 0.0, 0 0, 0.0 1.0, 30 -1)
+		CLIPS("close-clip", 20 18, 20 18, "top-right", 1.0 0.0, 0 0, 0.0 1.0, -15 -8)
+		CLIPS("max-clip", 20 18, 20 18, "close-clip", 1.0 0.0, 0 0, 0.0 1.0, -45 -1)
+		CLIPS("min-clip", 20 18, 20 18, "max-clip", 1.0 0.0, 0 0, 0.0 1.0, -45 -1)
 		BUTTONS("button-close", "close-clip", 15 15, "close-clip", "bd_button_close_unfocused.png")
 		BUTTONS("button-max", "max-clip", 15 15, "max-clip", "bd_button_max_unfocused.png")
 		BUTTONS("button-min", "min-clip", 15 15, "min-clip", "bd_button_min_unfocused.png")
@@ -987,7 +994,8 @@ group {
 		BORDER3("top-center", 5 23, 9999 23, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "bd_top.png", 1.0 0.5, 0.0 0.5, 0 0)
 		BORDER3("bottom-center", 5 5, 9999 5, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bd_bottom.png", 1.0 1.0, 0.0 1.0, 0 -6)
 		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 1.0 1.0, -2 -6)
-		TITLE_CLIP("title.area.clip", 1 20, "close-clip", 1.0 0.5, 10 0, "top-right", 1.0 0.5, -30 0, 255 255 255 255)
+		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "top-right", 1.0 0.5, -30 0, 255 255 255 255)
+		//TITLE_CLIP("title.area.clip", 1 20, "close-clip", 1.0 0.5, 10 0, "top-right", 1.0 0.5, -30 0, 255 255 255 255)
 		part { 	name: "e.text.title";
 			type: TEXT;
 			effect: SOFT_SHADOW BOTTOM;
@@ -1029,12 +1037,14 @@ group {
 				visible: 1;
 			}
 		}
-		BORDER("top-right-over", 6 23, 6 23, 1.0 0.0, 0 22, 1.0 0.0, -6 0, "bd_top_right_over.png", 1.0 1.0, 1.0 0.0, -5 23)
+		BORDER("top-left-over", 6 23, 6 23, 0.0 0.0, 3 22, 0.0 0.0, 3 0, "bd_top_left_over.png", 0.0 0.0, 0.0 0.0, 3 22)
+		BORDER("top-right-over", 6 23, 6 23, 1.0 0.0, 0 22, 1.0 0.0, -6 0, "bd_top_right.png", 1.0 1.0, 1.0 0.0, -5 23)
 		BORDER3("top-center-over", 5 23, 9999 23, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "bd_top_overm.png", 1.0 1.0, 0.0 1.0, -1 -2)
 
 		MOVE_WINDOW("move-window", 1 22, 9999 22, "top-left", 0.0 0.0, 5 2, "top-right", 1.0 1.0, -7 -1, 255 0 0 0)
-		PART_EVENT_MAP("e.event.titlebar", 1, "move-window")		
-		CLIPS("close-clip", 20 18, 20 18, "top-left", 0.0 0.0, 0 0, 0.0 1.0, 30 -8)
+		PART_EVENT_MAP("e.event.titlebar", 1, "move-window")	
+		CLIPS("close-clip", 20 18, 20 18, "top-right", 1.0 0.0, 0 0, 0.0 1.0, -7 -8)	
+		//CLIPS("close-clip", 20 18, 20 18, "top-left", 0.0 0.0, 0 0, 0.0 1.0, 30 -8)
 		BUTTONS("button-close", "close-clip", 15 15, "close-clip", "bd_button_close_unfocused.png")
 		PART_EVENT_MAP("e.event.close", 1, "button-close")
 		part { 														
@@ -1111,7 +1121,8 @@ group {
 		BORDER3("top-center", 5 23, 9999 23, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "bd_top.png", 1.0 0.5, 0.0 0.5, 0 0)
 		BORDER3("bottom-center", 5 5, 9999 5, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bd_bottom.png", 1.0 1.0, 0.0 1.0, 0 -6)
 		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 1.0 1.0, -2 -6)
-		TITLE_CLIP("title.area.clip", 1 20, "close-clip", 1.0 0.5, 10 0, "top-right", 1.0 0.5, -30 0, 255 255 255 255)
+		//TITLE_CLIP("title.area.clip", 1 20, "close-clip", 1.0 0.5, 10 0, "top-right", 1.0 0.5, -30 0, 255 255 255 255)
+		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "top-right", 1.0 0.5, -30 0, 255 255 255 255)
 		part { 	name: "e.text.title";
 			type: TEXT;
 			effect: SOFT_SHADOW BOTTOM;
@@ -1153,7 +1164,8 @@ group {
 				visible: 1;
 			}
 		}
-		BORDER("top-right-over", 6 23, 6 23, 1.0 0.0, 0 22, 1.0 0.0, -6 0, "bd_top_right_over.png", 1.0 1.0, 1.0 0.0, -5 23)
+		BORDER("top-left-over", 6 23, 6 23, 0.0 0.0, 3 22, 0.0 0.0, 3 0, "bd_top_left_over.png", 0.0 0.0, 0.0 0.0, 3 22)
+		BORDER("top-right-over", 6 23, 6 23, 1.0 0.0, 0 22, 1.0 0.0, -6 0, "bd_top_right.png", 1.0 1.0, 1.0 0.0, -5 23)
 		BORDER3("top-center-over", 5 23, 9999 23, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "bd_top_overm.png", 1.0 1.0, 0.0 1.0, -1 -2)
 
 		MOVE_WINDOW("move-window", 1 22, 9999 22, "top-left", 0.0 0.0, 5 2, "top-right", 1.0 1.0, -7 -1, 255 0 0 0)
@@ -1166,7 +1178,8 @@ group {
 		PART_EVENT_MAP("e.event.resize.b", 0, "bottom-center")
 		PART_EVENT_MAP("e.event.resize.tr", 0, "top-right")
 		PART_EVENT_MAP("e.event.resize.tl", 0, "top-left")		
-		CLIPS("close-clip", 20 18, 20 18, "top-left", 0.0 0.0, 0 0, 0.0 1.0, 30 -8)
+		CLIPS("close-clip", 20 18, 20 18, "top-right", 1.0 0.0, 0 0, 0.0 1.0, -7 -8)
+		//CLIPS("close-clip", 20 18, 20 18, "top-left", 0.0 0.0, 0 0, 0.0 1.0, 30 -8)
 		BUTTONS("button-close", "close-clip", 15 15, "close-clip", "bd_button_close_unfocused.png")
 		PART_EVENT_MAP("e.event.close", 1, "button-close")
 		RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)

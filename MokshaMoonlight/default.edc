@@ -220,6 +220,7 @@ image: "bd_button_min_unfocused.png" COMP;
 image: "bd_top_over.png" COMP;
 image: "bd_top_overm.png" COMP;
 image: "bd_top_right_over.png" COMP;
+image: "bd_top_left_over.png" COMP;
 image: "bd_top_right_overs.png" COMP;
 
 image: "bd_left.png" COMP;
