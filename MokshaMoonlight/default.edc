@@ -220,6 +220,7 @@ image: "bd_button_min_unfocused.png" COMP;
 image: "bd_top_over.png" COMP;
 image: "bd_top_overm.png" COMP;
 image: "bd_top_right_over.png" COMP;
+image: "bd_top_left_over.png" COMP;
 image: "bd_top_right_overs.png" COMP;
 
 image: "bd_left.png" COMP;
@@ -1528,6 +1529,7 @@ group { name: "e/pointer/enlightenment/rotate/color";
                }
                text {
                   style: "dialog_style";
+                  ellipsis: -1;
                   min: 1 1;
                }
             }
@@ -10688,6 +10690,7 @@ group { name: "e/widgets/entry/password";
 						size:			 10;
 						min:		1 1;
 						align:			0.5 0.5;
+						ellipsis: -1;
 						text_class: "slider";
 					}
 				}
@@ -10944,10 +10947,11 @@ group { name: "e/widgets/entry/password";
 					color: 0 0 0 255;
 					color_class: "slider_text";
 					text { text:  "0.0";
-						font:			 "Sans";
-						size:			 10;
+						font:		"Sans";
+						size:		10;
 						min:		1 1;
-						align:			0.5 0.5;
+						ellipsis:   -1;
+						align:		0.5 0.5;
 						text_class: "slider";
 					}
 				}
