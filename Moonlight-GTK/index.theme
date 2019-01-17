@@ -1,19 +1,11 @@
 [Desktop Entry]
-Name=Windows7-Aero
 Type=X-GNOME-Metatheme
-Comment=Theme by Brahim Salem inspired by Win2-7 
+Name=oomox-MokshaMoonlight
+Comment=A partially sexual act; when a female (of any species; mostly humanoids) rubs the ears/lobes of a male Ferengi, creating sensual emotions and chemical reactions in the male (and sometimes in the female).
+Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Windows7-Aero
-MetacityTheme=Windows7-Aero
-IconTheme=Win2-7
-CursorTheme=aero-drop
-CursorSize=18
-ButtonLayout=menu:minimize,maximize,close
-
-#Fonts
-ApplicationFont=Segoe UI 10
-DocumentFont=Segoe UI 10
-DesktopFont=Segoe UI 10
-WindowTitleFont=Segoe UI 10
-FixedWidthFont=Monospace 10
+Name=oomox-MokshaMoonlight
+GtkTheme=oomox-MokshaMoonlight
+IconTheme=oomox-MokshaMoonlight
+MetacityTheme=oomox-MokshaMoonlight
