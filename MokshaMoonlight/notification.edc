@@ -12,7 +12,7 @@ group { name: "e/modules/notification/logo";
 }
 
 group { name: "e/modules/notification/main";
-   images.image: "img/popup.png" COMP;
+   images.image: "button-prelight.png" COMP;
    images.image: "sym_close_light_normal.png" COMP;
    images.image: "sym_close_light_selected.png" COMP;
    data.item: "app_icon_max" "48 48";
@@ -47,9 +47,10 @@ group { name: "e/modules/notification/main";
    parts {
       part { name: "base";
          description { state: "default" 0.0;
-            image.normal: "img/popup.png";
-            color: TOOLTIP_COLOR;
-            image.border: 10 10 10 10;
+            image.normal: "button-prelight.png";
+            //~ color: TOOLTIP_COLOR;
+            //~ color: 255 255 255 0;
+            image.border: 2 2 2 2;
             min: 280 90;
             //~ max: 280 90;
          }
@@ -124,7 +125,7 @@ group { name: "e/modules/notification/main";
             rel2.to_x: "e.event.close";
             rel2.offset: -5 12;
             color: 255 255 255 255;
-            color2: 255 255 255 32;
+            color2: 0 0 0 32;
             color3: 255 255 255 24;
             align: 0.0 0.0;
             color_class: "notification_title";
