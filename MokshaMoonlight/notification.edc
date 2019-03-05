@@ -50,7 +50,7 @@ group { name: "e/modules/notification/main";
             image.normal: "img/popup.png";
             color: TOOLTIP_COLOR;
             image.border: 10 10 10 10;
-            //~ min: 280 90;
+            min: 280 90;
             //~ max: 280 90;
          }
       }
