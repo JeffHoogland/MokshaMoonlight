@@ -863,7 +863,7 @@ group {
 }
 
 group {
-	name: "e/widgets/border/left/border";
+	name: "e/widgets/border/left_controls/border";
 	alias: "e/widgets/border/shaped/border";
 
 	data {
