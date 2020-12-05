@@ -11432,6 +11432,10 @@ group { name: "e/modules/conf/main";
          action: STATE_SET "default" 0.0;
          target: "base";
       }
+      program {
+         signal: "mouse,clicked,1*"; source: "icon";
+         action: SIGNAL_EMIT "e,action,conf" "";
+      }
   }
 }
 
