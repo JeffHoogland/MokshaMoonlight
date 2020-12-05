@@ -15,9 +15,9 @@ data {
 	item: "theme/name"		"Midnight Moonlight";
 	item: "theme/version"	"beta";
 	item: "theme/author"	"Alberto 'Duma' Verdoja";
-	item: "gtk-theme"       "Moonlight-GTK";
+	item: "gtk-theme"		"Moonlight-GTK";
 	item: "version"			"110";
-	
+	item: "icon-theme"		"Icons-Moksha-Moonlight";
 }
 
 /// These stuffs can be changed also with Settings -> Look -> Colors, but
@@ -218,6 +218,7 @@ image: "bd_button_max_unfocused.png" COMP;
 image: "bd_button_min_unfocused.png" COMP;
 
 image: "bd_top_over.png" COMP;
+image: "bd_top_over_left.png" COMP;
 image: "bd_top_overm.png" COMP;
 image: "bd_top_right_over.png" COMP;
 image: "bd_top_left_over.png" COMP;
@@ -11430,6 +11431,10 @@ group { name: "e/modules/conf/main";
          signal: "mouse,up,1*"; source: "icon";
          action: STATE_SET "default" 0.0;
          target: "base";
+      }
+      program {
+         signal: "mouse,clicked,1*"; source: "icon";
+         action: SIGNAL_EMIT "e,action,conf" "";
       }
   }
 }
