@@ -222,9 +222,9 @@ image: "bd_top_over_left.png" COMP;
 image: "bd_top_overm.png" COMP;
 image: "bd_top_right_over.png" COMP;
 image: "bd_top_left_over.png" COMP;
-image: "bd_top_right_overs.png" COMP;
+//~ image: "bd_top_right_overs.png" COMP;
 
-image: "bd_left.png" COMP;
+//~ image: "bd_left.png" COMP;
 image: "win_shadow.png" COMP;
 }
 #include "border.edc"
@@ -4689,6 +4689,8 @@ group { name: "e/pointer/enlightenment/rotate/color";
 				repeat_events: 0;
 				description { state: "default" 0.0;
 					color:		0 0 0 0;
+					image.normal:  "icon_efm_dnd_copy.png";
+					visible: 0; 
 				}
 				description { state: "visible" 0.0;
 					aspect: 1.0 1.0;
@@ -4697,10 +4699,11 @@ group { name: "e/pointer/enlightenment/rotate/color";
 					min: 24 24;
 					rel1.relative: 0.75 0.0;
 					rel2.relative: 1.0 1.0;
+					image.normal:  "icon_efm_dnd_copy.png";
+					visible: 1; 
 				}
 				description { state: "copy" 0.0;
 					inherit: "visible" 0.0;
-					image.normal:  "icon_efm_dnd_copy.png";
 				}
 				description { state: "ask" 0.0;
 					inherit: "visible" 0.0;
@@ -5087,6 +5090,8 @@ group { name: "e/pointer/enlightenment/rotate/color";
 				repeat_events: 0;
 				description { state: "default" 0.0;
 					color:		0 0 0 0;
+					image.normal:  "icon_efm_dnd_copy.png";
+					visible: 0;
 				}
 				description { state: "visible" 0.0;
 					aspect: 1.0 1.0;
@@ -5095,10 +5100,11 @@ group { name: "e/pointer/enlightenment/rotate/color";
 					min: 24 24;
 					rel1.relative: 0.75 0.0;
 					rel2.relative: 1.0 1.0;
+					image.normal:  "icon_efm_dnd_copy.png";
+					visible: 1;
 				}
 				description { state: "copy" 0.0;
 					inherit: "visible" 0.0;
-					image.normal:  "icon_efm_dnd_copy.png";
 				}
 				description { state: "ask" 0.0;
 					inherit: "visible" 0.0;
@@ -6156,6 +6162,10 @@ group { name: "e/pointer/enlightenment/rotate/color";
 				description {
 					state:		"default" 0.0;
 					color:		0 0 0 0;
+					image {
+						normal:  "icon_efm_dnd_copy.png";
+					}
+					visible: 0;
 				}
 				description {
 					state:		"visible" 0.0;
@@ -6168,13 +6178,14 @@ group { name: "e/pointer/enlightenment/rotate/color";
 					rel2 {
 						relative: 1.0 1.0;
 					}
+					image {
+						normal:  "icon_efm_dnd_copy.png";
+					}
+					visible: 1;
 				}
 				description {
 					state:		"copy" 0.0;
 					inherit:			"visible" 0.0;
-					image {
-						normal:  "icon_efm_dnd_copy.png";
-					}
 				}
 				description {
 					state:		"ask" 0.0;
@@ -6557,6 +6568,10 @@ group { name: "e/pointer/enlightenment/rotate/color";
 				description {
 					state:		"default" 0.0;
 					color:		0 0 0 0;
+					image {
+						normal:  "icon_efm_dnd_copy.png";
+					}
+					visible: 0;
 				}
 				description {
 					state:		"visible" 0.0;
@@ -6569,13 +6584,14 @@ group { name: "e/pointer/enlightenment/rotate/color";
 					rel2 {
 						relative: 1.0 1.0;
 					}
+					image {
+						normal:  "icon_efm_dnd_copy.png";
+					}
+					visible: 1;
 				}
 				description {
 					state:		"copy" 0.0;
 					inherit:			"visible" 0.0;
-					image {
-						normal:  "icon_efm_dnd_copy.png";
-					}
 				}
 				description {
 					state:		"ask" 0.0;
@@ -6959,6 +6975,10 @@ group { name: "e/pointer/enlightenment/rotate/color";
 				description {
 					state:		"default" 0.0;
 					color:		0 0 0 0;
+					image {
+						normal:  "icon_efm_dnd_copy.png";
+					}
+					visible: 0;
 				}
 				description {
 					state:		"visible" 0.0;
@@ -6971,13 +6991,14 @@ group { name: "e/pointer/enlightenment/rotate/color";
 					rel2 {
 						relative: 1.0 1.0;
 					}
+					image {
+						normal:  "icon_efm_dnd_copy.png";
+					}
+					visible: 1;
 				}
 				description {
 					state:		"copy" 0.0;
 					inherit:			"visible" 0.0;
-					image {
-						normal:  "icon_efm_dnd_copy.png";
-					}
 				}
 				description {
 					state:		"ask" 0.0;
@@ -7355,16 +7376,20 @@ group { name: "e/pointer/enlightenment/rotate/color";
 				}
 			}
 			part { name: "dnd_action";
-				type:					IMAGE;
+				type: IMAGE;
 				mouse_events:  0;
 				repeat_events: 0;
 				description {
-					state:		"default" 0.0;
-					color:		0 0 0 0;
+					state: "default" 0.0;
+					color: 0 0 0 0;
+					image {
+						normal:  "icon_efm_dnd_copy.png";
+					}
+					visible: 0;
 				}
 				description {
-					state:		"visible" 0.0;
-					aspect:			 1.0 1.0;
+					state: "visible" 0.0;
+					aspect: 1.0 1.0;
 					aspect_preference: BOTH;
 					align: 1.0 1.0;
 					rel1 {
@@ -7373,17 +7398,18 @@ group { name: "e/pointer/enlightenment/rotate/color";
 					rel2 {
 						relative: 1.0 1.0;
 					}
-				}
-				description {
-					state:		"copy" 0.0;
-					inherit:			"visible" 0.0;
 					image {
 						normal:  "icon_efm_dnd_copy.png";
 					}
+					visible: 1;
 				}
 				description {
-					state:		"ask" 0.0;
-					inherit:			"visible" 0.0;
+					state: "copy" 0.0;
+					inherit: "visible" 0.0;
+				}
+				description {
+					state: "ask" 0.0;
+					inherit: "visible" 0.0;
 					image {
 						normal:  "icon_efm_dnd_ask.png";
 					}
@@ -7397,8 +7423,8 @@ group { name: "e/pointer/enlightenment/rotate/color";
 				}
 			}
 			part {
-				name:							"event";
-				type:							RECT;
+				name: "event";
+				type: RECT;
 				description {
 					state: "default" 0.0;
 					color: 0 0 0 0;
@@ -7453,7 +7479,7 @@ group { name: "e/pointer/enlightenment/rotate/color";
 				target:  "icon_box_shadow";
 				target:  "icon_box";
 				target:  "icon_box_bg";
-				after:	"thumb_gen2";
+				after:   "thumb_gen2";
 			}
 			program { name: "thumb_gen-";
 				signal:  "e,action,thumb,gen,alpha";
@@ -7462,30 +7488,30 @@ group { name: "e/pointer/enlightenment/rotate/color";
 				target:  "icon_box_shadow";
 				target:  "icon_box";
 				target:  "icon_box_bg";
-				after:	"thumb_gen2";
+				after:   "thumb_gen2";
 			}
 			program { name: "thumb_gen2";
 				action:  STATE_SET "min" 0.0;
 				target:  "icon";
-				after:	"thumb_gen3";
+				after:   "thumb_gen3";
 			}
 			program { name: "thumb_gen3";
 				action:  STATE_SET "max" 0.0;
 				target:  "icon";
 				transition: DECELERATE 0.2;
-				after:	"thumb_gen4";
+				after:   "thumb_gen4";
 			}
 			program { name: "thumb_gen4";
 				action:  STATE_SET "default" 0.0;
 				target:  "icon";
 				transition: SINUSOIDAL 0.1;
-				after:	"thumb_gen5";
+				after:   "thumb_gen5";
 			}
 			program { name: "thumb_gen5";
 				action:  STATE_SET "max2" 0.0;
 				target:  "icon";
 				transition: SINUSOIDAL 0.2;
-				after:	"thumb_gen6";
+				after:   "thumb_gen6";
 			}
 			program { name: "thumb_gen6";
 				action:  STATE_SET "default" 0.0;
@@ -7986,10 +8012,10 @@ group { name: "e/pointer/enlightenment/rotate/color";
 	/*** FILE MANAGER TOOLBAR ***/
 
 group { name: "e/fileman/toolbar/default/base";
-	images {
-		image: "toolbar_top.png" COMP;
-		image: "toolbar_bottom.png" COMP;
-	}
+	//~ images {
+		//~ image: "toolbar_top.png" COMP;
+		//~ image: "toolbar_bottom.png" COMP;
+	//~ }
 	parts {
 		part { name: "base";
 		type: RECT;
@@ -12262,6 +12288,7 @@ group { name: "e/modules/conf/main";
 				}
 			}
 			part { name: "background_bottom";
+				type: RECT;
 				description { state: "default" 0.0;
 					rel1.to: "background";
 					rel1.relative: 0.0 0.42;
