@@ -728,7 +728,7 @@ group {
 	alias: "e/widgets/border/shaped/border";
 
 	data {
-		item: "shadow" "1";
+		item: "shaped" "1";
 	}
 
 	parts {
@@ -867,7 +867,7 @@ group {
 	alias: "e/widgets/border/shaped/border";
 
 	data {
-		item: "shadow" "1";
+		item: "shaped" "1";
 	}
 
 	parts {
@@ -1147,7 +1147,7 @@ group {
 	//alias: "e/widgets/border/wm_app/border";
 
 	data {
-		item: "shadow" "1";
+		item: "shaped" "1";
 	}
 
 	parts {
@@ -1274,7 +1274,7 @@ group {
 	alias: "e/widgets/border/noresize/border";
 
 	data {
-		item: "shadow" "1";
+		item: "shaped" "1";
 	}
 
 	parts {
