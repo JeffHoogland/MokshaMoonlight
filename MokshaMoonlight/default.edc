@@ -15,9 +15,9 @@ data {
 	item: "theme/name"		"Midnight Moonlight";
 	item: "theme/version"	"beta";
 	item: "theme/author"	"Alberto 'Duma' Verdoja";
-	item: "gtk-theme"		"Moonlight-GTK";
+	item: "gtk-theme"		"MokshaMoonlight-GTK";
+  item: "icon-theme"		"MokshaMoonlight-Icons";
 	item: "version"			"110";
-	item: "icon-theme"		"Icons-Moksha-Moonlight";
 }
 
 /// These stuffs can be changed also with Settings -> Look -> Colors, but
