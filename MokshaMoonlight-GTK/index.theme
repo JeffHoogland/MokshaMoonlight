@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=MokshaMoonlight
+Comment=The Moonlight theme for Moksha desktop created with oomox tool.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=MokshaMoonlight
+GtkTheme=MokshaMoonlight
+IconTheme=MokshaMoonlight
+MetacityTheme=MokshaMoonlight
